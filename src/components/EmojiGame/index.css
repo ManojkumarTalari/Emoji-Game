@@ -1,0 +1,150 @@
+/* Common styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, #9796f0, #fbc7d4);
+  margin: 0;
+  padding: 0;
+}
+
+.EmojiGame-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+.emojisList-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: transparent;
+}
+.emoji-container {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* NavBar styles */
+.NavBar-container {
+  width: 100%;
+  background-color: #6a59ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.heading {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.score-container {
+  display: flex;
+  gap: 20px;
+}
+
+.current-score,
+.high-score {
+  font-size: 18px;
+}
+
+/* EmojiCard styles */
+.EmojiCard-container {
+  margin: 10px;
+  background-color: #ffffff33;
+  border: 1px solid #ffffff30;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WinOrLossCard styles */
+.WinOrLossCard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  background-color: #ffffff33;
+  border: 1px solid #ffffff30;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.won-loss-heading {
+  font-size: 32px;
+  color: #3d3d3d;
+}
+
+.best-score-text,
+.score-current {
+  font-size: 24px;
+  color: #3d3d3d;
+}
+
+.play-again-btn {
+  background-color: #ffce27;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .emoji-container {
+    max-width: 350px;
+  }
+  .emoji-btn {
+    max-height: 120px;
+    max-width: 120px;
+  }
+  .emoji-btn-img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 577px) {
+  .emoji-container {
+    max-width: 700px;
+  }
+  .emoji-btn {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .emoji-btn-img {
+    width: 150px;
+    height: 150px;
+  }
+}
